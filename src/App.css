@@ -1,0 +1,845 @@
+.App {
+  position: relative;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  overflow-x: hidden;
+}
+
+/*スクロールしない*/
+.top {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+}
+
+.top-layer {
+  z-index: -1;
+}
+
+.top-content {
+  background-color: rgba(57, 84, 117, 0.8);
+  z-index: 1;
+  height: 100vh;
+}
+
+.section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*スクロールする*/
+.wrapper {
+  z-index: 2;
+  width: 100%;
+}
+
+.white-wrapper {
+  background-color: white;
+  text-align: center;
+}
+
+/*スクロールする（文字）*/
+.wrapper-transfer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+}
+
+.alert {
+  width: 150px;
+  background-color: white;
+  color: #f29f1c;
+  border-radius: 50px;
+  align-items: center;
+  margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span {
+  text-shadow: 0 3px 0 #00000078;
+  font-size: 50px;
+}
+
+.top-text h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top-text h1 {
+  font-size: 50px;
+  text-shadow: 0 3px 0 #00000078;
+}
+
+.alert h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.sub-text {
+  font-size: 32px;
+  padding: 20px 0;
+  margin-bottom: 28px;
+  margin-top: 0;
+  text-shadow: 0 3px 0 #00000078;
+}
+
+.benefit {
+  width: 100%;
+  display: flex;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+}
+
+.items-merit {
+  display: flex;
+  justify-content: center;
+}
+
+.items-benefits {
+  display: flex;
+  justify-content: center;
+}
+
+.items-ver2 {
+  width: 90%;
+  margin: 0 5%;
+}
+
+/*CTA*/
+.CTA {
+  padding: 50px 0 100px 0;
+}
+
+.CTA-mid {
+  padding: 50px 0 100px 0;
+}
+
+.CTA-2 {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(57, 84, 117, 0.8);
+  height: 400px;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.CTA h1 {
+  font-size: 28px;
+  line-height: 2.2em;
+}
+
+.CTA h2 {
+  font-size: 20px;
+}
+
+.CTA-mid h1 {
+  font-size: 24px;
+  padding: 0 20px;
+}
+
+.CTA-mid h2 {
+  font-size: 17px;
+}
+
+.CTA-mid h3 {
+  font-size: 13px;
+}
+
+.CTA-mid p {
+  padding: 0 15px;
+}
+
+.entry {
+  width: 300px;
+  height: 80px;
+  background-color: #f29f1c;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.tel {
+  line-height: normal;
+  margin: 25px !important;
+}
+
+.tel h2 {
+  font-size: 24px;
+}
+
+.tel p {
+  font-size: 12px;
+}
+
+.tel-text {
+  margin: 0;
+}
+
+.free {
+  text-align: left;
+  font-size: 17px;
+  align-items: center;
+  height: auto;
+  margin-top: 40px;
+}
+
+.entry-footer {
+  margin: 20px 40px;
+  cursor: pointer;
+}
+
+.CTA-button {
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  bottom: 0;
+  left: 0;
+  border: none;
+  z-index: 2000 !important;
+  margin: 0;
+  border-radius: 0;
+  background-color: rgba(57, 84, 117, 1);
+  display: flex;
+  justify-content: space-between;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.CTA-button div {
+  color: white;
+}
+
+.tel {
+  margin: 10px;
+}
+
+/*matters*/
+
+/*スキーム*/
+.scheme {
+  width: 180px;
+  background-color: #ffebcd;
+  border-radius: 50px;
+  align-items: center;
+  margin: auto;
+}
+
+/*メッセージ*/
+.message h1 {
+  color: #f29f1c;
+  font-size: 28px;
+}
+
+.message h2 {
+  color: #f29f1c;
+  font-size: 24px;
+}
+
+.message img {
+  width: 240px;
+  height: auto;
+}
+
+/*solution*/
+.solution {
+  width: 100%;
+  height: 80px;
+  background-color: #395475;
+}
+.solution h1 {
+  color: white;
+  padding-top: 15px;
+}
+.triangle {
+  width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 30px solid #395475;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid transparent;
+}
+
+.recruit {
+  max-width: 1200px;
+  width: 60%;
+  border: solid 20px #f29f1c;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.recruit h2 {
+  color: #395475;
+}
+/*merit*/
+.merit {
+  height: 50px;
+  width: 600px;
+  background-color: #f29f1c;
+  border-radius: 50px;
+  align-items: center;
+  margin: auto;
+  color: white;
+}
+
+.arrow-img {
+  width: 94px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.merit h3 {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+/*Profile*/
+.profile-left {
+  position: relative;
+  display: flex;
+  margin: 200px 5% 5% 10%;
+  width: 450px;
+  height: 300px;
+  box-shadow: 3px 3px 5px #e3e5ea, -3px -3px 5px #fff;
+}
+
+.profile-left img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.profile-left h2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-20%, -50%);
+  margin: 0;
+}
+
+.profile-right {
+  margin: 200px 0 5% 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.profile-right h1 {
+  font-size: 21px;
+  width: 100%;
+}
+
+.list {
+  text-align: left;
+}
+
+li {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(76, 76, 76);
+}
+
+/*description*/
+.section-description {
+  height: 800px;
+}
+
+/*partners*/
+.partner-slick {
+  width: 100%;
+  display: flex;
+  justify-content: space-between !important;
+  max-width: 1800px;
+}
+
+.partner-item {
+  height: 60px;
+  width: auto;
+}
+
+/*clients*/
+.section-clients {
+  height: 850px;
+}
+
+.clients {
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 200px;
+}
+
+/*approach support*/
+
+.approach {
+  border-top: solid 3px white;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.approach-title {
+  color: white;
+  padding: 50px 0;
+}
+
+.support {
+  border-top: solid 3px #395475;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.support-title {
+  color: #395475;
+  padding: 50px 0;
+}
+
+.support-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.support-text {
+  padding: 0 20px;
+}
+
+/*feature*/
+
+.feature {
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-top: 200px;
+}
+
+/*info*/
+.items-information {
+  max-width: 1194px;
+  margin-left: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-bottom: 100px;
+}
+
+.section-merit {
+  height: 700px;
+}
+
+.section-matter {
+  height: 650px;
+}
+
+.section-profile {
+  height: 700px;
+}
+
+.section-partner {
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
+
+.section-feature {
+  height: 700px;
+}
+
+.section-procedure {
+  height: 450px;
+}
+
+.section-information {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .section {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  /*スクロールする*/
+
+  /*スクロールする（文字）*/
+
+  span {
+    text-shadow: 0 3px 0 #00000078;
+    font-size: 28px;
+  }
+
+  .alert h2 {
+    font-size: 18px;
+  }
+
+  .top-text h3 {
+    font-size: 18px;
+  }
+
+  .top-text h1 {
+    font-size: 28px;
+  }
+
+  .sub-text {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .benefit {
+    width: 100%;
+    display: flex;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-items {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+  }
+
+  .items div {
+    width: 90%;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-left {
+    width: 300px !important;
+  }
+  .profile-right {
+    width: 360px !important;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  /*CTA*/
+  .CTA h1 {
+    font-size: 21px;
+  }
+  .CTA h2 {
+    font-size: 14px;
+  }
+
+  .entry {
+    width: 80%;
+    height: 80px;
+    margin: 0 10%;
+    background-color: #f29f1c;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 21px;
+  }
+
+  .CTA-2 {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 100px;
+    color: white;
+  }
+
+  .CTA-button {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    border: none;
+    z-index: 2000 !important;
+    margin: 0;
+    border-radius: 0;
+    background-color: rgba(57, 84, 117, 1);
+    display: flex;
+    justify-content: space-between;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .CTA-button div {
+    color: white;
+  }
+
+  .entry {
+    width: 300px;
+    height: 60px;
+    background-color: #f29f1c;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .tel {
+    line-height: normal;
+    margin: 10px !important;
+    margin: 10px;
+  }
+
+  .tel h2 {
+    font-size: 17px;
+  }
+
+  .tel p {
+    font-size: 10px;
+  }
+
+  .tel-text {
+    margin: 0;
+  }
+
+  .entry-footer {
+    margin: 10px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #f29f1c;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    width: 200px;
+  }
+  /*solution*/
+  .solution {
+    height: 60px;
+  }
+  .solution h1 {
+    padding-top: 15px;
+    font-size: 20px;
+  }
+  .triangle {
+    border-top: 20px solid #395475;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+  }
+
+  .recruit {
+    box-sizing: border-box;
+    width: 90%;
+    margin-bottom: 100px;
+  }
+  .recruit h2 {
+    font-size: 16px;
+  }
+  /*matters*/
+
+  /*スキーム*/
+  .scheme h3 {
+    font-size: 16px;
+  }
+
+  /*メッセージ*/
+  .message h1 {
+    font-size: 20px;
+  }
+
+  .message h2 {
+    font-size: 18px;
+  }
+
+  /*merit*/
+  .merit {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .merit h3 {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+
+  /*approach support*/
+
+  .approach-title h2 {
+    font-size: 18px;
+  }
+
+  .approach {
+    width: 90%;
+  }
+
+  .approach h1 {
+    font-size: 24px;
+  }
+
+  .support {
+    width: 90%;
+  }
+
+  .support-title h2 {
+    font-size: 18px;
+  }
+
+  .support h1 {
+    font-size: 24px;
+  }
+
+  .support-container {
+    flex-direction: column;
+  }
+
+  .support-text {
+    font-size: 14px;
+  }
+
+  /*Profile*/
+  .profile-left {
+    margin: 200px 5% 5% 5%;
+    width: 90%;
+    height: auto;
+    padding-top: 200px;
+  }
+
+  .profile-left img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .profile-left h2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-20%, -50%);
+    margin: 0;
+  }
+
+  .profile-right {
+    margin: 200px 0 5% 0;
+  }
+
+  .list {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  /*partners*/
+  .partner-slick {
+    width: auto;
+    display: flex;
+    justify-content: space-between !important;
+  }
+
+  .partner-item {
+    width: auto;
+    height: 40px;
+    width: auto !important;
+  }
+
+  /*description*/
+  .section-description {
+    height: auto;
+  }
+  /*clients*/
+  .section-clients {
+    height: 600px;
+    padding-bottom: 100px;
+  }
+
+  .clients {
+    padding-top: 100px;
+  }
+
+  /*feature*/
+
+  .feature {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .section-merit {
+    height: 400px;
+  }
+
+  .section-matter {
+    height: 840px;
+  }
+
+  .section-profile {
+    height: 600px;
+  }
+
+  .section-partner {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+  }
+
+  .slick-track {
+    padding-top: 150px;
+  }
+
+  .section-feature {
+    height: 730px;
+  }
+
+  .section-procedure {
+    height: 800px;
+  }
+
+  .section-information {
+    padding-bottom: 0px;
+  }
+}
